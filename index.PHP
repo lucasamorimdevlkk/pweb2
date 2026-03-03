@@ -1,10 +1,17 @@
+<?php
+ $titulo = 'cavalo';
+ $imagem = 'cavahttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSH6ACmKsSXoww14vYxz-6qqqhFPatON2446yUVxRxm0QcetZGEkJl7xFsVrzkrLphGYviSb3QeZru5yQ1d7Xoc0cn9vbd7NzvNAIZ7jQJ&s=10lo';
+ $resumo =  'Cavalo 4 patas e bem cavalgadas yeah';
+ $valor = 50000;   
+    ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <title>Lojinha</title>
 <body>
@@ -41,11 +48,12 @@
         </div>
     <div class="row mt-2">
         <div class="col-sm-3"><div class="card" style="width: 18rem;">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSH6ACmKsSXoww14vYxz-6qqqhFPatON2446yUVxRxm0QcetZGEkJl7xFsVrzkrLphGYviSb3QeZru5yQ1d7Xoc0cn9vbd7NzvNAIZ7jQJ&s=10" class="card-img-top img-thumbnail" alt="...">
+            <img src="<?php echo $imagem ?>" class="card-img-top img-thumbnail" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Produto 1</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title"><?php echo $titulo ?></h5>
+              <p class="card-text"><?php echo $resumo ?>
+            <p class="text-danger"><?php echo $valor ?></p></p>
+              <a href="#" class="btn btn-outline-dark">Go somewhere</a>
             </div>
           </div></div>
 
@@ -54,7 +62,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto 2</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-outline-dark">Go somewhere</a>
             </div>
           </div></div>
 
@@ -63,7 +71,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto 3</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-outline-dark">Go somewhere</a>
             </div>
           </div></div>
 
@@ -72,7 +80,7 @@
             <div class="card-body">
               <h5 class="card-title">Produto 4</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-outline-dark">Mostrar produto</a>
             </div>
           </div></div>
     </div>
@@ -80,6 +88,6 @@
 
       </main>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
